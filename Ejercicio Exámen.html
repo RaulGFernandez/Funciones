@@ -12,7 +12,7 @@
     function mostrarPar (num, valor, limit){
     while(num > limite){
     num = num - valor;
-    document.write (num+"<br>")
+    document.write (num + "<br>")
     }
 
 
@@ -21,7 +21,7 @@
     function mostrarImpar (num, valor, limit){
     while(num > limite){
     num = num - valor;
-    document.write (num+"<br>")
+    document.write (num + "<br>")
     }
 
 
@@ -35,11 +35,11 @@
     const LIMITE_PAR = 0;
     const MSG_PAR = "El usuario introduce ";
 
-    let num = prompt(MSG);
+    let num = prompt(MSG_PREGUNTA);
 
 
 
-    if (num%2=0){
+    if (num%2==0){
        mostrarPar(num,LIMITE_PAR,VALOR_PAR);
     }else{
         mostrarImpar(num,LIMITE_IMPAR,VALOR_IMPAR);
