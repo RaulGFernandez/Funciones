@@ -7,8 +7,22 @@
 </head>
 <body>
 <script>
-    function mostrar (num, valor, limit){
-    if 
+    
+    
+    function mostrarPar (num, valor, limit){
+    while(num > limite){
+    num = num - valor;
+    document.write (num+"<br>")
+    }
+
+
+    }   
+
+    function mostrarImpar (num, valor, limit){
+    while(num > limite){
+    num = num - valor;
+    document.write (num+"<br>")
+    }
 
 
     }   
@@ -26,9 +40,11 @@
 
 
     if (num%2=0){
+       mostrarPar(num,LIMITE_PAR,VALOR_PAR);
+    }else{
+        mostrarImpar(num,LIMITE_IMPAR,VALOR_IMPAR);
 
-        
-    }
+    }   
 
 
 </script> 
