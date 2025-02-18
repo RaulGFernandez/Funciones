@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function contar(){
+while(contador < limite){
+    contador++
+if(contador % 2){
+document.write(contador+MSG_IMPAR)
+document.write(`<br>`)
+}else{
+document.write(contador+MSG_PAR)
+document.write(`<br>`)
+}
+
+}
+
+}
+
+const MSG_PREGUNTA = 'Hasta que numero quieres que cuente y te diga si es par o impar'
+const MSG_PAR = ' Este numero es par'
+const MSG_IMPAR =  ' Este numero es impar'
+const MSG = 'Este numero es'
+
+let limite = prompt(MSG_PREGUNTA)
+let contador = 0
+
+
+contar()
+
+
+
+
+
+</script>     
+</body>
+</html>

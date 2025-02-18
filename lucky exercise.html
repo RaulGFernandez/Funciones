@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function adivinar(numelegido, numeromenor, numeromayor) {
+            if (mensaje == numelegido) {
+                document.write(MSG_NUMERO_ACERTADO)
+
+            } else if (mensaje > numelegido) {
+                document.write(MSG_VALOR_MENOR)
+
+            } else {
+                (mensaje < numelegido)
+                document.write(MSG_VALOR_MAYOR)
+
+            }
+        }
+
+
+        const MSG_PREGUNTA = 'Intenta adiviniar el numero elegido por deus';
+        const MSG_VALOR_MENOR = 'El valor buscado es menor';
+        const MSG_VALOR_MAYOR = 'El valor buscado es mayor';
+        const MSG_NUMERO_ACERTADO = 'Has acertado¡'
+        const NUMERO_ELEGIDO_DEUS = 14;
+
+        let mensaje = prompt(MSG_PREGUNTA)
+
+
+        adivinar(NUMERO_ELEGIDO_DEUS, MSG_VALOR_MENOR, MSG_VALOR_MAYOR)
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
