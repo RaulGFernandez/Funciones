@@ -14,7 +14,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open Ejericio Exámen.html "
+            "name": "Open  "
             "file": "c:\\JavaScript\\Funciones\\Ejercicio Exámen.html"
         }
     ]
