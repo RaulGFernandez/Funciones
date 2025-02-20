@@ -5,9 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "type": "chrome",
             "request": "launch",
-            "name": "Open Ejercicio Exámen.html",
+            "name": "Open Ejericio Exámen.html "
             "file": "c:\\JavaScript\\Funciones\\Ejercicio Exámen.html"
         }
     ]
