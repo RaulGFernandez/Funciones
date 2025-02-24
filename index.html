@@ -8,20 +8,31 @@
 <body>
     <script>
 
-        // Aquí se define la función pintarNombre
-        function pintarNombre(nombre, apellidos, edad){
-            const MAYORIA_EDAD = 18
-            document.write(`El usuario se llama ${nombre} y tiene los apellidos ${apellidos} - `)
+        const NUM_TABLAS = 5
+        const BASE = 1
+        const NUM_FILAS = 10;
+        const TITULO = "Tabla de multiplicar del "
 
-            if(edad>=MAYORIA_EDAD){
-                document.write("Es mayor de edad <br>")
-            }else{
-                document.write("Es menor de edad <br>")
+        let i = 1;
+        let j = 1;
+
+        //Esto pinta los títulos
+        while (i <= NUM_TABLAS) {
+            document.write(TITULO)
+            document.write(i)
+
+            document.write("<br>")
+
+            //Este loop pinta las 10 entradas de la tabla de multiplicar
+            while (j <= NUM_FILAS) {
+                document.write(`${i} x ${j} = ${i * j}`)
+                document.write("<br>")
+                j++
             }
-        }
 
-        //Aquí se llama a la función y se ejecuta.
-        pintarNombre("María", "Pérez", 30)
+            j = 1
+            i++
+        }
     </script>
     
 </body>
